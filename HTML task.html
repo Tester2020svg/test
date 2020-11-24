@@ -77,5 +77,26 @@
 		</tbody></table>
 	</div>
 	<br> 
+	<script>
+
+function checkAge(age) {
+ if (age >= 18) {
+ return true;
+ } else {
+ return confirm('Родители разрешили?');
+ }
+}
+var age = prompt('Ваш возраст?');
+if (checkAge(age)) {
+ alert( 'Добро пожаловать' );
+} else {
+ alert( 'В доступе отказано' );
+}
+function summ (a,b){
+return a+b;
+}
+var test = summ(1,5);
+alert (test);
+</script>
 </body>
 </html>
